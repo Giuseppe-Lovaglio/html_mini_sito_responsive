@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+body {
+    background-color: #202020;
+    height: 100%;
+    margin: 0px;
+}
+
+#contenitore {
+    background-color: white;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#testa {
+    background-color: white;
+    text-align: center;
+    padding: 0px;
+}
+
+#menu_nascosto {
+    display: none;
+}
+
+
+#logo {
+    width: 400px;
+    height: auto;
+    padding-left: 50px;
+}
+
+#main {
+    background-color: #ab0421;
+    float: left;
+}
+
+#centro {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    width: 800px;
+    height: 100%;
+    background-color: white;
+    padding: 30px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: medium;
+}
+
+#immagine_centrale {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#menu_sinistra {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: #ab0421;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu_destra {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: #ab0421;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#piede {
+    position: relative; /* permette al div absolute all'interno di rimanere nel box*/
+    clear: both;
+    float: left;
+    width: 100%;
+    background-color: #eedfd4;
+    height: 60px;
+}
+
+ul {
+    text-align: center;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+    font-size: large;
+    line-height: 60px;
+    padding-right: 40px;
+}
+
+
+.menu_title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #eedfd4;
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+    color: #eedfd4;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+#piede b {
+    position: relative;
+    float: left;
+    top: 20px;
+    padding-left: 30px;
+}
+
+#pd {
+    position: absolute;
+    height: 60px;
+    right: 0px;
+    padding-right: 30px;
+}
+
+#email {
+    color: black;
+}
+
+#email:hover {
+    color: blue;
+}
+
+p {
+    text-align: justify;
+}
+
+#data {
+    position: relative;
+    top: 18px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.container_copertina {
+    position: relative;
+    float: left;
+    width: 240px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.copertina {
+    max-width: 100%;
+}
+
+.top_titles {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+
+
+@media only screen and (max-width: 1230px) {
+
+    #contenitore {
+        width: 100%;
+    }
+    
+    #corpo {
+        width: 100%;
+    }
+
+
+    #menu_sinistra {
+        clear: both;
+        width: 100%;
+        height: 200px;
+    }
+
+    #centro {
+        font-size: larger;
+        box-sizing: border-box;
+        width: 70%;
+        padding: 5%;
+    }
+
+    #menu_destra {
+        box-sizing: border-box;
+        width: 30%;
+        border-top: 2px solid #eedfd4;
+    }
+
+    #menu_destra ul {
+        font-size: larger;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #menu_sinistra ul {
+        font-size: larger;
+        padding-top: 3.5%;
+    }
+
+    #menu_sinistra ul li {
+        display: inline;
+        padding-left: 3%;  
+    }
+
+    #piede {
+        font-size: larger;
+        position: relative;
+        width: 100%;
+    }
+
+    .menu_title {
+        font-size: larger;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    #menu_destra {
+        width: 100%;
+    }
+
+    #centro {
+        width: 100%;
+    }
+
+    #menu_destra ul li {
+        display: inline;
+        padding-left: 3%;  
+    }
+
+    #menu_nascosto {
+        display: block;
+        margin: auto;
+        height: 100px;
+        width: 300px;
+        background-color: #ab0421;
+        border: solid;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #eedfd4;
+        font-size: x-large;
+        border-radius: 60px; 
+        margin-top: 45px;
+    }
+
+    #menu_nascosto:focus {
+        outline: none;
+        background-color: #202020;
+        border-style: dashed;
+    }
+
+    #menu_nascosto:hover {
+        cursor: pointer;
+    }
+
+    #menu_sinistra ul {
+        display: none;
+    }
+
+}
